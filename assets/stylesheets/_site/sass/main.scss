@@ -1,0 +1,230 @@
+
+
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+@import 'reset';            //reset and base settings
+@import 'common';           //common re-usable components specific to wireframe
+
+
+.floatwrapper {position: fixed; @include span-4(6, 12, 12, 12); }
+.container {@include outer-container;}
+
+
+
+#header-container {
+   @extend %content-padding; 
+   @include media($small-only){padding:0}
+ }
+
+#header-logo {
+   position: fixed; @include media($small-only){display:none}
+   @extend %gradient-gray-opaque;
+
+   .header-logo-img {max-height: $base*6; padding: $base;}
+   
+   @include media($small-only){margin-left: $base*0.6; }
+   @include media($medium){margin-left: $base*1.3; }
+   @include media($larger){margin-left: $base*3; }
+
+   @extend %shadow-gray;
+   border-right: 1px solid $light-gray; border-bottom: 1px solid $light-gray; border-top: 0;
+}
+
+#menu-btns-wrapper {
+   text-transform: uppercase;
+
+   #menu-btns {@include media($medium){@include span-columns(9); @include shift(3)}}
+   #menu-btns {@include media($large){@include span-columns(6); @include shift(6)}}
+   #menu-btns:first-child {@include media($medium){border-left: 0px;}}
+
+   .menu-btn {
+      display:block; color: $color-menu; @extend %opensans;
+
+      @include media($small-only){
+         float: left; width: 25%; 
+         padding: $base*2 0 $base*2 0; 
+         text-align: center; font-size: $menu-font-size*0.82; font-weight: 700; 
+      }
+      @include media($medium){
+         padding: $base*1.1 0 $base*1.1 0; 
+         @include span-columns(3.2); @include omega(); float: left; 
+         text-align: center; font-weight: 700; font-size: $menu-font-size*0.84; 
+      }
+      @include media($larger){font-size: $menu-font-size; }
+      
+      @extend %gradient-buttons;
+      @extend %shadow-gray;
+
+      border-left: 1px solid #fff; 
+      &:first-child {border-left: 0px}
+      border-right: 1px solid $light-gray; border-bottom: 1px solid $light-gray;
+  
+      &, &:visited, &:active { color: $color-menu;  text-decoration: none; }
+      &:hover {color: $color-menu-hover; text-decoration: none; @include ease-transition(100ms);
+      @extend %gradient-gray-light-reverse;}
+   }
+
+   .menu-selected {
+      @extend %gradient-gray-reverse;
+      &, &:visited, &:active { color: $color-menu-selected;}
+   }
+}
+
+
+
+
+
+
+
+
+
+// rules to #content will affect every element between the menu, including the index page
+#main {background: url(../../images/sand.jpg)};
+.container-section {@extend %content-padding;}
+
+h1 { 
+   background-color: green; 
+   @include span-4(6, 6, 6, 4);
+   display: block; 
+   @include row;
+}
+.section-intro { background-color: orange; }
+
+
+#intro {
+   height: 300px; z-index: 2200; 
+   // @extend %gradient-tmp;
+   // background: url('../../images/1100x500fade.png') rgba(20,20,20, 0.95);
+   background: rgba(20,20,20, 0.95);
+   
+   background-repeat: no-repeat;
+   background-position: center center;
+   vertical-align: middle;
+   #intro-content{
+      padding-top: $content-toppadding;
+   }
+}
+#sessions {height: 500px; background-color: red}
+#classes {height: 500px; background-color: green}
+#about {height: 500px; background-color: yellow}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+   background: rgba(20,20,20, 0.95);
+
+   a, a:active, a:visited {color: $light-gray;text-decoration: none;}
+   a:hover {color: $gray;}
+
+
+
+   #footer-content {
+      padding-top: $content-toppadding;
+
+      .footer-row {
+         text-transform: uppercase;
+
+         @extend %opensans;
+         font-size: $footer-title-size; font-weight: 700;
+         color: $light-gray;
+
+         @include span-4(6, 12, 12, 12);
+         
+         @extend %content-padding;
+
+
+         .footer-block{
+            padding: $base $base $base $base;
+            background-color: rgba(220,220,220, 0.1);
+            @include span-4(6, 6, 6, 6);
+         }
+
+         #footer-reach{
+            font-weight: 300; text-transform: lowercase;
+            height: 100px;
+            #footer-phone{font-size: $base*2.3; @include media($medium-only){font-size: $base*2; }}
+            #footer-email{font-size: $base*1.9; @include media($medium-only){font-size: $base*1.4; }}
+         }
+
+         #footer-follow{
+            @include span-4(6, 6, 6, 6);
+            height: 100px;
+
+            // social
+            .social {
+               // @include span-4(2, 4, 4, 4); with youtube (3 pods)
+               @include span-4(3, 6, 6, 6); //2 pods
+               height: 100px;
+               background-repeat: no-repeat;
+               background-position: center center;
+               vertical-align: middle;
+               background-color: rgba(220,220,220, 0.1);
+               @include media($small-only){margin-top: $base; }
+
+            }
+            .twitter {
+               background-image: url(../../images/twitter.png);
+               &:hover {background-color: rgba(220,220,220, 0.2);}
+            }
+            .facebook {
+               background-image: url(../../images/facebook.png);
+               &:hover {background-color: rgba(220,220,220, 0.2);}
+            }
+
+            .youtube {
+               background-image: url(../../images/youtube.png);
+               &:hover {background-color: rgba(220,220,220, 0.2);}
+            }
+         }
+
+
+         .block-title {border-bottom: solid 1px $light-gray;}
+
+         #footer-find{
+            background: none; text-transform:capitalize; 
+            #footer-addy1{font-size: $base*1.6; font-weight: 700; span{font-weight: 300; } 
+               @include media($medium-only){font-size: $base*1.4; }
+               @include media($smaller){span{display: block;}}
+            }
+            #footer-addy2{font-size: $base*1.6; font-weight: 300; }
+            #footer-desc{margin-top: $base; font-size: $base*1.5; font-weight: 300; text-transform: none;}
+         }
+         #footer-map{
+            @include span-4(6, 6, 6, 6);
+            background-color: rgba(220,220,220, 0.1);
+            height: $base*30;
+            @include media($small-only){margin-top: $base; }
+         }
+
+         #footer-legal{
+            font-weight: 400; 
+            font-size: $base;
+            text-transform: none;
+            text-align: right;
+            color: $medium-gray;
+         }
+      }
+
+   }
+}

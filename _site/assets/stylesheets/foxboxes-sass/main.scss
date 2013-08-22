@@ -1,0 +1,120 @@
+
+// clean up font stacks
+// redirect page from dropbox
+
+// Questions / Info
+// - how do you set up assessment, schedule personal training?
+// - how do classes work? Can you walk in and pay per class? How do you know it's full or if spots are left?
+// - what are the opening hours of the gym?
+// - is there a cost of membership to use the equipment or is it only classes?
+// - get a pull-quote for Noel
+// - do we really want personal contact information for trainers out in the open?
+
+// Compass frameworks
+@import "compass/css3";
+@import "compass/utilities";
+
+// core frameworks
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+// framework files
+@import '___reset';        //basic reset
+@import '___framework';    //basic framework: breakpoints etc.
+
+@import 'design';          //elements of design
+@import 'function';        //elements of functionality
+
+// External Plugins
+@import '___flexslider';
+
+
+
+
+
+// *********************************************************
+// UNIVERSAL
+// *********************************************************
+
+
+
+// *********************************************************
+// HEADER
+// *********************************************************
+#menu-artist{
+   @include span-all(3, 6, 6, 6);
+   text-align: center;
+}
+
+#menu-about{
+   @include span-all(3, 6, 6, 6);
+   text-align: center;
+}
+
+.button {
+   background-color: red;
+}
+
+
+// *********************************************************
+// MAIN
+// *********************************************************
+
+#mailchimp {background: blue; @include border-radius(4px, 4px);}
+
+#main-poster {
+   background: url('/assets/images/infoxicatedposter.jpg') center;
+   height: 400px;
+}
+
+#half-poster {
+   background: url('/assets/images/infoxicatedposter.jpg') center;
+   height: 200px;
+}
+
+#googlemaps {
+   @include span-all(6, 12, 12, 12);
+   height: 500px;
+   @include media($small-only) { height: 100px; }
+
+}
+
+// *********************************************************
+// FOOTER
+// *********************************************************
+#footer-left {
+   @include span-all(12, 6, 4, 4);
+
+   #footer-logo {
+      height: 246px;
+      // width: 246px; 
+      text-align: center;
+      background-color: #aaa;
+   }
+}
+
+#footer-right {
+   @include span-all(6, 6, 8, 8);
+}
+
+
+#footer-social {
+   @include outer-container;
+   .footer-social-item {
+      background-color: #aaa;
+      @include span-all(6, 3, 3, 3);
+      height: 20px;
+   }
+}
+
+#footer-form {
+   @include outer-container;
+   .form-element { margin-top: $base/2; margin-bottom: $base/2; }
+   #emf-form{@include span-all(6, 12, 12, 12);}
+   #form-label { @include span-all(6, 12, 12, 12); }
+   #form-name { @include span-all(6, 12, 12, 12); }
+   #form-email { @include span-all(6, 12, 12, 12); }
+   #form-message { @include span-all(6, 12, 12, 12); }
+   #element_2 { @include span-all(6, 12, 12, 12); }
+   #form-send { @include span-all(6, 12, 12, 12); }
+}

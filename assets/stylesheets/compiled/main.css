@@ -1,0 +1,1631 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
+/* line 2, ../foxboxes-sass/neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*  HTML5 ✰ Boilerplate  */
+/* line 16, ../foxboxes-sass/____reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 26, ../foxboxes-sass/____reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 30, ../foxboxes-sass/____reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 32, ../foxboxes-sass/____reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 33, ../foxboxes-sass/____reset.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 34, ../foxboxes-sass/____reset.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 35, ../foxboxes-sass/____reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 36, ../foxboxes-sass/____reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 37, ../foxboxes-sass/____reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 38, ../foxboxes-sass/____reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 39, ../foxboxes-sass/____reset.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 42, ../foxboxes-sass/____reset.scss */
+body {
+  font: 16px sans-serif;
+  *font-size: small;
+}
+
+/* line 43, ../foxboxes-sass/____reset.scss */
+select, input, textarea, button {
+  font: 99% sans-serif;
+}
+
+/* line 44, ../foxboxes-sass/____reset.scss */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* line 46, ../foxboxes-sass/____reset.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 47, ../foxboxes-sass/____reset.scss */
+a:hover, a:active {
+  outline: none;
+}
+
+/* line 50, ../foxboxes-sass/____reset.scss */
+ul, ol {
+  margin-left: 0em;
+}
+
+/* line 51, ../foxboxes-sass/____reset.scss */
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+/* line 52, ../foxboxes-sass/____reset.scss */
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+/* line 54, ../foxboxes-sass/____reset.scss */
+nav ul, nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+/* line 55, ../foxboxes-sass/____reset.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 56, ../foxboxes-sass/____reset.scss */
+strong, th {
+  font-weight: bold;
+}
+
+/* line 57, ../foxboxes-sass/____reset.scss */
+td {
+  vertical-align: top;
+}
+
+/* line 59, ../foxboxes-sass/____reset.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+/* line 60, ../foxboxes-sass/____reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 61, ../foxboxes-sass/____reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 63, ../foxboxes-sass/____reset.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+}
+
+/* line 64, ../foxboxes-sass/____reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 65, ../foxboxes-sass/____reset.scss */
+.ie6 legend, .ie7 legend {
+  margin-left: -7px;
+}
+
+/* line 66, ../foxboxes-sass/____reset.scss */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* line 67, ../foxboxes-sass/____reset.scss */
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+/* line 68, ../foxboxes-sass/____reset.scss */
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+/* line 69, ../foxboxes-sass/____reset.scss */
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+/* line 70, ../foxboxes-sass/____reset.scss */
+label, input[type="button"], input[type="submit"], input[type="image"], button {
+  cursor: pointer;
+}
+
+/* line 71, ../foxboxes-sass/____reset.scss */
+button, input, select, textarea {
+  margin: 0;
+}
+
+/* line 73, ../foxboxes-sass/____reset.scss */
+input:invalid, textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
+}
+
+/* line 74, ../foxboxes-sass/____reset.scss */
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* line 77, ../foxboxes-sass/____reset.scss */
+button {
+  width: auto;
+  overflow: visible;
+}
+
+/* line 78, ../foxboxes-sass/____reset.scss */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 80, ../foxboxes-sass/____reset.scss */
+body, select, input, textarea {
+  color: #444;
+}
+
+/* line 85, ../foxboxes-sass/____reset.scss */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+/* line 86, ../foxboxes-sass/____reset.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 87, ../foxboxes-sass/____reset.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 89, ../foxboxes-sass/____reset.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 90, ../foxboxes-sass/____reset.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 91, ../foxboxes-sass/____reset.scss */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 92, ../foxboxes-sass/____reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 93, ../foxboxes-sass/____reset.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 25, ../foxboxes-sass/____framework.scss */
+.article, .section, .row {
+  padding-top: 1.625em;
+  padding-bottom: 1.625em;
+}
+
+/* line 26, ../foxboxes-sass/____framework.scss */
+.container {
+  *zoom: 1;
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 18, ../foxboxes-sass/bourbon/addons/_clearfix.scss */
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+/* line 23, ../foxboxes-sass/bourbon/addons/_clearfix.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 49, ../foxboxes-sass/____framework.scss */
+.show-small {
+  display: none !important;
+}
+@media screen and (min-width: 0px) {
+  /* line 49, ../foxboxes-sass/____framework.scss */
+  .show-small {
+    display: block !important;
+  }
+}
+
+/* line 50, ../foxboxes-sass/____framework.scss */
+.show-small-only {
+  display: none !important;
+}
+@media screen and (max-width: 480px) {
+  /* line 50, ../foxboxes-sass/____framework.scss */
+  .show-small-only {
+    display: block !important;
+  }
+}
+
+/* line 55, ../foxboxes-sass/____framework.scss */
+.show-medium {
+  display: none !important;
+}
+@media screen and (min-width: 481px) {
+  /* line 55, ../foxboxes-sass/____framework.scss */
+  .show-medium {
+    display: block !important;
+  }
+}
+
+/* line 56, ../foxboxes-sass/____framework.scss */
+.show-medium-only {
+  display: none !important;
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* line 56, ../foxboxes-sass/____framework.scss */
+  .show-medium-only {
+    display: block !important;
+  }
+}
+
+/* line 57, ../foxboxes-sass/____framework.scss */
+.show-medium-max {
+  display: none !important;
+}
+@media screen and (max-width: 767px) {
+  /* line 57, ../foxboxes-sass/____framework.scss */
+  .show-medium-max {
+    display: block !important;
+  }
+}
+
+/* line 62, ../foxboxes-sass/____framework.scss */
+.show-larger {
+  display: none !important;
+}
+@media screen and (min-width: 768px) {
+  /* line 62, ../foxboxes-sass/____framework.scss */
+  .show-larger {
+    display: block !important;
+  }
+}
+
+/* line 63, ../foxboxes-sass/____framework.scss */
+.show-larger-only {
+  display: none !important;
+}
+@media screen and (min-width: 768) and (max-width: 979) {
+  /* line 63, ../foxboxes-sass/____framework.scss */
+  .show-larger-only {
+    display: block !important;
+  }
+}
+
+/* line 64, ../foxboxes-sass/____framework.scss */
+.show-larger-max {
+  display: none !important;
+}
+@media screen and (max-width: 979px) {
+  /* line 64, ../foxboxes-sass/____framework.scss */
+  .show-larger-max {
+    display: block !important;
+  }
+}
+
+/* line 67, ../foxboxes-sass/____framework.scss */
+.show-largest {
+  display: none !important;
+}
+@media screen and (min-width: 980px) {
+  /* line 67, ../foxboxes-sass/____framework.scss */
+  .show-largest {
+    display: block !important;
+  }
+}
+
+/* line 11, ../foxboxes-sass/_design.scss */
+.contentSlider {
+  width: 100%;
+}
+
+/* line 18, ../foxboxes-sass/_design.scss */
+.contentSlider,
+.contentSlider .rsOverflow,
+.contentSlider .rsSlide,
+.contentSlider .rsVideoFrameHolder,
+.contentSlider .rsThumbs {
+  background: #eee;
+  color: #000;
+}
+
+/* line 24, ../foxboxes-sass/_design.scss */
+.contentSlider .rsSlide,
+.contentSlider .rsOverflow {
+  background: #eee;
+}
+
+/* line 27, ../foxboxes-sass/_design.scss */
+.contentSlider h3 {
+  font-size: 24px;
+  line-height: 31px;
+  margin: 12px 0 8px;
+  font-weight: bold;
+}
+
+/* line 33, ../foxboxes-sass/_design.scss */
+.contentSlider img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* line 38, ../foxboxes-sass/_design.scss */
+.content-slider-bg {
+  width: 86%;
+  padding: 24px 7%;
+  background: #eee;
+}
+
+/* line 117, ../foxboxes-sass/_design.scss */
+.white {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* line 118, ../foxboxes-sass/_design.scss */
+.orange {
+  background-color: rgba(255, 195, 40, 0.7);
+}
+
+/* line 119, ../foxboxes-sass/_design.scss */
+.green {
+  color: white;
+  background-color: rgba(109, 152, 71, 0.84);
+}
+
+/* line 120, ../foxboxes-sass/_design.scss */
+.greenu {
+  background: #659940;
+  /* The Fallback */
+  background: rgba(101, 153, 64, 0.88);
+}
+
+/* line 121, ../foxboxes-sass/_design.scss */
+.dark {
+  color: #cccccc;
+  background-color: rgba(70, 70, 70, 0.8);
+}
+
+/* line 122, ../foxboxes-sass/_design.scss */
+.lighter {
+  color: #333333;
+  background-color: rgba(255, 255, 255, 0.88);
+}
+
+/* line 123, ../foxboxes-sass/_design.scss */
+.light {
+  color: #333333;
+  background-color: rgba(250, 250, 250, 0.86);
+}
+
+/* line 124, ../foxboxes-sass/_design.scss */
+.soft {
+  color: #333333;
+  background-color: rgba(255, 255, 255, 0.56);
+}
+
+/* line 125, ../foxboxes-sass/_design.scss */
+.cloud {
+  background-color: rgba(100, 100, 100, 0.06);
+}
+
+/* line 126, ../foxboxes-sass/_design.scss */
+.glass {
+  background-color: rgba(80, 80, 80, 0.46);
+}
+
+/* line 127, ../foxboxes-sass/_design.scss */
+.glassdark {
+  background-color: rgba(20, 20, 20, 0.59);
+}
+
+/* line 128, ../foxboxes-sass/_design.scss */
+.txtsilver {
+  color: #f2f2f2;
+}
+
+/* line 137, ../foxboxes-sass/_design.scss */
+.reveal-btn:before, .reveal-btn-container:before, .flex-direction-nav a {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 10, ../foxboxes-sass/_function.scss */
+.floater {
+  position: fixed;
+  z-index: 99999;
+}
+@media screen and (min-width: 0px) {
+  /* line 10, ../foxboxes-sass/_function.scss */
+  .floater {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  .floater:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* line 10, ../foxboxes-sass/_function.scss */
+  .floater {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  .floater:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 10, ../foxboxes-sass/_function.scss */
+  .floater {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  .floater:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 10, ../foxboxes-sass/_function.scss */
+  .floater {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  .floater:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 23, ../foxboxes-sass/_function.scss */
+  .reveal-btn, .reveal-btn-container {
+    cursor: hand;
+    cursor: pointer;
+  }
+  /* line 26, ../foxboxes-sass/_function.scss */
+  .reveal-btn:hover, .reveal-btn-container:hover {
+    background: rgba(180, 180, 180, 0.4) !important;
+    -webkit-transition: 500ms ease;
+    -moz-transition: 500ms ease;
+    -ms-transition: 500ms ease;
+    -o-transition: 500ms ease;
+    transition: 500ms ease;
+  }
+}
+
+/* line 30, ../foxboxes-sass/_function.scss */
+.reveal-btn:before, .reveal-btn-container:before {
+  font-size: 1.54375em;
+  font-weight: 100;
+  content: '>';
+  position: absolute;
+  right: 25px;
+  line-height: 26px;
+  display: block;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+}
+@media screen and (min-width: 481px) {
+  /* line 30, ../foxboxes-sass/_function.scss */
+  .reveal-btn:before, .reveal-btn-container:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 44, ../foxboxes-sass/_function.scss */
+  .reveal-content {
+    display: none;
+  }
+}
+
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+/* Browser Resets */
+/* line 14, ../foxboxes-sass/____flexslider.scss */
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
+  outline: none;
+}
+
+/* line 15, ../foxboxes-sass/____flexslider.scss */
+.slides, .flex-control-nav, .flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+/* line 21, ../foxboxes-sass/____flexslider.scss */
+.flexslider {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+}
+
+/* line 22, ../foxboxes-sass/____flexslider.scss */
+.flexslider .slides {
+  zoom: 1;
+}
+
+/* line 23, ../foxboxes-sass/____flexslider.scss */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 25, ../foxboxes-sass/____flexslider.scss */
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+/* Clearfix for the .slides element */
+/* line 29, ../foxboxes-sass/____flexslider.scss */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 30, ../foxboxes-sass/____flexslider.scss */
+html[xmlns] .slides {
+  display: block;
+}
+
+/* line 31, ../foxboxes-sass/____flexslider.scss */
+* html .slides {
+  height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+/* line 36, ../foxboxes-sass/____flexslider.scss */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* FlexSlider Default Theme
+*********************************/
+/* line 41, ../foxboxes-sass/____flexslider.scss */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* Direction Nav */
+/* line 45, ../foxboxes-sass/____flexslider.scss */
+.flex-direction-nav {
+  *height: 0;
+}
+
+/* line 46, ../foxboxes-sass/____flexslider.scss */
+.flex-direction-nav a {
+  font-weight: 100;
+  font-size: 3.4125em;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  display: block;
+  padding-top: 1px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  background-color: rgba(30, 30, 30, 0.9);
+  text-decoration: none;
+  color: #f2f2f2;
+  opacity: 0.8;
+  -webkit-transition: all .3s ease;
+}
+
+/* line 54, ../foxboxes-sass/____flexslider.scss */
+.flex-direction-nav .flex-prev {
+  display: none;
+}
+
+/* line 55, ../foxboxes-sass/____flexslider.scss */
+.flex-next {
+  right: 3%;
+}
+
+/* line 56, ../foxboxes-sass/____flexslider.scss */
+.flexslider:hover .flex-next {
+  opacity: 0.5;
+}
+
+/* line 57, ../foxboxes-sass/____flexslider.scss */
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+  opacity: 0.53;
+  background-color: rgba(250, 250, 250, 0.98);
+  color: #333333;
+}
+
+/* Control Nav */
+/* line 61, ../foxboxes-sass/____flexslider.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 90%;
+  /*top: $base*32.5;*/
+}
+
+/* line 62, ../foxboxes-sass/____flexslider.scss */
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 63, ../foxboxes-sass/____flexslider.scss */
+.flex-control-paging li a {
+  top: -40px;
+  width: 1.625em;
+  height: 0.8125em;
+  display: block;
+  padding: 0 3.25em 0 3.25em;
+  background: #666;
+  background: rgba(100, 100, 100, 0.4);
+  cursor: pointer;
+  border: 1px solid rgba(250, 250, 250, 0.66);
+  text-indent: -9999px;
+}
+
+/* line 74, ../foxboxes-sass/____flexslider.scss */
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* line 75, ../foxboxes-sass/____flexslider.scss */
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default;
+}
+
+/* line 77, ../foxboxes-sass/____flexslider.scss */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+
+/* line 78, ../foxboxes-sass/____flexslider.scss */
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+
+/* line 79, ../foxboxes-sass/____flexslider.scss */
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+
+/* line 44, ../foxboxes-sass/main.scss */
+#menu-artist {
+  text-align: center;
+}
+@media screen and (min-width: 0px) {
+  /* line 44, ../foxboxes-sass/main.scss */
+  #menu-artist {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 47.58542%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #menu-artist:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* line 44, ../foxboxes-sass/main.scss */
+  #menu-artist {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #menu-artist:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 44, ../foxboxes-sass/main.scss */
+  #menu-artist {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #menu-artist:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 44, ../foxboxes-sass/main.scss */
+  #menu-artist {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #menu-artist:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 49, ../foxboxes-sass/main.scss */
+#menu-about {
+  text-align: center;
+}
+@media screen and (min-width: 0px) {
+  /* line 49, ../foxboxes-sass/main.scss */
+  #menu-about {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 47.58542%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #menu-about:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* line 49, ../foxboxes-sass/main.scss */
+  #menu-about {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #menu-about:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 49, ../foxboxes-sass/main.scss */
+  #menu-about {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #menu-about:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 49, ../foxboxes-sass/main.scss */
+  #menu-about {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #menu-about:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 54, ../foxboxes-sass/main.scss */
+.button {
+  background-color: red;
+}
+
+/* line 63, ../foxboxes-sass/main.scss */
+#mailchimp {
+  background: blue;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+}
+
+/* line 65, ../foxboxes-sass/main.scss */
+#main-poster {
+  background: url("/assets/images/infoxicatedposter.jpg") center;
+  height: 400px;
+}
+
+/* line 70, ../foxboxes-sass/main.scss */
+#half-poster {
+  background: url("/assets/images/infoxicatedposter.jpg") center;
+  height: 200px;
+}
+
+/* line 75, ../foxboxes-sass/main.scss */
+#googlemaps {
+  height: 500px;
+}
+@media screen and (min-width: 0px) {
+  /* line 75, ../foxboxes-sass/main.scss */
+  #googlemaps {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #googlemaps:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* line 75, ../foxboxes-sass/main.scss */
+  #googlemaps {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #googlemaps:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 75, ../foxboxes-sass/main.scss */
+  #googlemaps {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #googlemaps:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 75, ../foxboxes-sass/main.scss */
+  #googlemaps {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #googlemaps:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 75, ../foxboxes-sass/main.scss */
+  #googlemaps {
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  /* line 85, ../foxboxes-sass/main.scss */
+  #footer-left {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 204.82916%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-left:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* line 85, ../foxboxes-sass/main.scss */
+  #footer-left {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-left:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 85, ../foxboxes-sass/main.scss */
+  #footer-left {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-left:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 85, ../foxboxes-sass/main.scss */
+  #footer-left {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-left:last-child {
+    margin-right: 0;
+  }
+}
+/* line 88, ../foxboxes-sass/main.scss */
+#footer-left #footer-logo {
+  height: 246px;
+  text-align: center;
+  background-color: #aaa;
+}
+
+@media screen and (min-width: 0px) {
+  /* line 96, ../foxboxes-sass/main.scss */
+  #footer-right {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-right:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* line 96, ../foxboxes-sass/main.scss */
+  #footer-right {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-right:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 96, ../foxboxes-sass/main.scss */
+  #footer-right {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-right:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 96, ../foxboxes-sass/main.scss */
+  #footer-right {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-right:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 101, ../foxboxes-sass/main.scss */
+#footer-social {
+  *zoom: 1;
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 18, ../foxboxes-sass/bourbon/addons/_clearfix.scss */
+#footer-social:before, #footer-social:after {
+  content: " ";
+  display: table;
+}
+/* line 23, ../foxboxes-sass/bourbon/addons/_clearfix.scss */
+#footer-social:after {
+  clear: both;
+}
+/* line 103, ../foxboxes-sass/main.scss */
+#footer-social .footer-social-item {
+  background-color: #aaa;
+  height: 20px;
+}
+@media screen and (min-width: 0px) {
+  /* line 103, ../foxboxes-sass/main.scss */
+  #footer-social .footer-social-item {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-social .footer-social-item:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* line 103, ../foxboxes-sass/main.scss */
+  #footer-social .footer-social-item {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-social .footer-social-item:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 103, ../foxboxes-sass/main.scss */
+  #footer-social .footer-social-item {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-social .footer-social-item:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 103, ../foxboxes-sass/main.scss */
+  #footer-social .footer-social-item {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-social .footer-social-item:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 110, ../foxboxes-sass/main.scss */
+#footer-form {
+  *zoom: 1;
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 18, ../foxboxes-sass/bourbon/addons/_clearfix.scss */
+#footer-form:before, #footer-form:after {
+  content: " ";
+  display: table;
+}
+/* line 23, ../foxboxes-sass/bourbon/addons/_clearfix.scss */
+#footer-form:after {
+  clear: both;
+}
+/* line 112, ../foxboxes-sass/main.scss */
+#footer-form .form-element {
+  margin-top: 0.40625em;
+  margin-bottom: 0.40625em;
+}
+@media screen and (min-width: 0px) {
+  /* line 113, ../foxboxes-sass/main.scss */
+  #footer-form #emf-form {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #emf-form:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* line 113, ../foxboxes-sass/main.scss */
+  #footer-form #emf-form {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #emf-form:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 113, ../foxboxes-sass/main.scss */
+  #footer-form #emf-form {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #emf-form:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 113, ../foxboxes-sass/main.scss */
+  #footer-form #emf-form {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #emf-form:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 0px) {
+  /* line 114, ../foxboxes-sass/main.scss */
+  #footer-form #form-label {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-label:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* line 114, ../foxboxes-sass/main.scss */
+  #footer-form #form-label {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-label:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 114, ../foxboxes-sass/main.scss */
+  #footer-form #form-label {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-label:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 114, ../foxboxes-sass/main.scss */
+  #footer-form #form-label {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-label:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 0px) {
+  /* line 115, ../foxboxes-sass/main.scss */
+  #footer-form #form-name {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-name:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* line 115, ../foxboxes-sass/main.scss */
+  #footer-form #form-name {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-name:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 115, ../foxboxes-sass/main.scss */
+  #footer-form #form-name {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-name:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 115, ../foxboxes-sass/main.scss */
+  #footer-form #form-name {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-name:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 0px) {
+  /* line 116, ../foxboxes-sass/main.scss */
+  #footer-form #form-email {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-email:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* line 116, ../foxboxes-sass/main.scss */
+  #footer-form #form-email {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-email:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 116, ../foxboxes-sass/main.scss */
+  #footer-form #form-email {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-email:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 116, ../foxboxes-sass/main.scss */
+  #footer-form #form-email {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-email:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 0px) {
+  /* line 117, ../foxboxes-sass/main.scss */
+  #footer-form #form-message {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-message:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* line 117, ../foxboxes-sass/main.scss */
+  #footer-form #form-message {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-message:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 117, ../foxboxes-sass/main.scss */
+  #footer-form #form-message {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-message:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 117, ../foxboxes-sass/main.scss */
+  #footer-form #form-message {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-message:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 0px) {
+  /* line 118, ../foxboxes-sass/main.scss */
+  #footer-form #element_2 {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #element_2:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* line 118, ../foxboxes-sass/main.scss */
+  #footer-form #element_2 {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #element_2:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 118, ../foxboxes-sass/main.scss */
+  #footer-form #element_2 {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #element_2:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 118, ../foxboxes-sass/main.scss */
+  #footer-form #element_2 {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #element_2:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 0px) {
+  /* line 119, ../foxboxes-sass/main.scss */
+  #footer-form #form-send {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-send:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* line 119, ../foxboxes-sass/main.scss */
+  #footer-form #form-send {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-send:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 119, ../foxboxes-sass/main.scss */
+  #footer-form #form-send {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-send:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 119, ../foxboxes-sass/main.scss */
+  #footer-form #form-send {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 54, ../foxboxes-sass/neat/grid/_span-columns.scss */
+  #footer-form #form-send:last-child {
+    margin-right: 0;
+  }
+}

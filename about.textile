@@ -1,0 +1,28 @@
+---
+layout: framework
+title: About FoxBoxes
+comments: false
+---
+
+
+<section>
+   
+   <a href="/"><div class="container" id="half-poster"></div></a>
+
+   <div class="container">
+      <div class="row">
+         <div>
+            <div class="column" id="menu-artist"><a href="/artists.html" class="button">Artists</a></div>
+            <div class="column" id="menu-about"><a href="/about.html" class="button">About Fox Boxes</a></div>
+         </div>
+      </div>
+   </div>
+
+   <div class="container">
+
+      <div class="row">
+      	About Fox Boxes
+      </div>
+
+   </div>
+</section>

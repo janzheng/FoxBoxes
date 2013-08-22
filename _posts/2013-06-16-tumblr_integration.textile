@@ -1,0 +1,17 @@
+---
+layout: framework
+title: How to Embed Tumblr Without a Server
+anchor: anchorname
+image-path: assets/images/foxboxes.jpg
+artist: FirstName LastNamewwwwww
+tagline: This is the tagline
+---
+
+This is the description. It is really long. 
+
+This is the second paragraph.
+
+
+
+
+Hey look here is a third!

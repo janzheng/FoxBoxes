@@ -1,0 +1,73 @@
+---
+layout: framework
+title: FoxBoxes Presents Infoxicated ATL - a Curated artists' flask show of all-out bad-assery 
+comments: false
+---
+
+
+
+<section>
+
+   <div class="container" id="main-poster"></div>
+
+   <!-- <div class="floater"> - don't make it float it's annoying-->
+
+
+  <!-- <a class="goto" id="top"></a> -->
+
+   <div class="container">
+      <div class="row">
+         <div>
+            <div class="column" id="menu-artist"><a href="/artists.html" class="button">Artists</a></div>
+            <div class="column" id="menu-about"><a href="/about.html" class="button">About Fox Boxes</a></div>
+         </div>
+      </div>
+   </div>
+
+   <!-- </div> -->
+
+</section>
+
+<div class="clear"></div>
+
+
+<section>
+   <div class="container">
+      <div class="row">Key Message</div>
+
+
+      <div class="row">
+         <iframe id="googlemaps" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Borderline+Gallery&amp;aq=&amp;sll=33.754692,-84.3594&amp;sspn=0.010758,0.020857&amp;g=858+DeKalb+Ave.,+Atlanta,+GA+30307&amp;ie=UTF8&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=16250499621230515333&amp;ll=33.754379,-84.359559&amp;output=embed"></iframe>
+      </div>
+      <div class="row rounded" id="mailchimp">Mailchimp</div>
+   </div>
+
+   <div class="container">
+      <div class="row">
+         Featured Artist
+         {% for post in site.posts limit:1 %}
+         <a class="post-link" href="artists.html">
+           <section class="post-list">
+             <h1>{{ post.artist }}</h1>
+             <div>{{ post.tagline }}</div>
+
+             {% if post.image-path %}      
+              <img class="post-image" src="{{ post.image-path }}"></img>           
+             {% endif %}
+             <div class="clear"></div>
+           </section>
+         </a>
+         {% endfor %}
+
+      </div>
+   </div>
+
+   <div id="content-slider-1" class="royalSlider contentSlider rsDefault">
+      <!-- lazy loaded image slide -->
+      <a class="rsImg" href="/assets/images/flask.jpg">image desc</a>
+      <a class="rsImg" href="/assets/images/flask.jpg">image desc</a>
+      <a class="rsImg" href="/assets/images/flask.jpg">image desc</a>
+      <a class="rsImg" href="/assets/images/flask.jpg">image desc</a>
+   </div>
+
+</section>

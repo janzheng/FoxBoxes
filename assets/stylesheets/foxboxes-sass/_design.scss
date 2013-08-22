@@ -1,0 +1,170 @@
+
+
+// *********************************************************
+// DESIGN FILE
+// - this file specifies variables and design components
+// - don't directly affect IDs and classes from this file
+// *********************************************************
+
+
+
+.contentSlider {
+  width: 100%;
+}
+.contentSlider,
+.contentSlider .rsOverflow,
+.contentSlider .rsSlide,
+.contentSlider .rsVideoFrameHolder,
+.contentSlider .rsThumbs {
+  background: #eee;
+  color: #000;
+}
+
+.contentSlider .rsSlide,
+.contentSlider .rsOverflow {
+  background: #eee;
+}
+.contentSlider h3 {
+  font-size: 24px;
+  line-height: 31px;
+  margin: 12px 0 8px;
+  font-weight: bold;
+}
+.contentSlider img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.content-slider-bg {
+  width: 86%;
+  padding: 24px 7%;
+  background: #eee;
+}
+
+// *********************************************************
+// DESIGN MIXINS
+// *********************************************************
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+@mixin ease-transition($speed){
+    -webkit-transition: $speed ease;
+    -moz-transition: $speed ease;
+    -ms-transition: $speed ease;
+    -o-transition: $speed ease;
+    transition: $speed ease;
+}
+
+
+.rounded {
+
+}
+
+// *********************************************************
+// VARIABLES
+// *********************************************************
+
+// fonts
+$menu-font-size: $base;
+$footer-title-size: $base*1.25;
+
+$font-size-h1: $base*2.8;
+$font-size-h2: $base*1.3;
+$font-size-h3: $base;
+$font-size-paragraph: $base*1.3;
+
+// color
+$color-upower-green: #659940;
+$color-upower-brown: #502713;
+$color-green-1: #659940;
+$color-green-2: #346633;
+
+$white: #fff;
+$black: #000;
+$red: #972020;
+$light-red: #a00;
+$light-gray: #ccc;
+$gray: #777;
+$dark-gray: #333;
+$medium-gray: #555;
+$silver: #f2f2f2;
+$pink: #f44a56;
+$matte-blue: #3e4b5d;
+
+$color-bg: #222;
+$color-highlight: #ccc;
+$color-text: #ddd;
+$color-text-para: #333;
+$color-text-link: #eee;
+$color-text-link-hover: #aaa;
+$color-btn: #333;
+$color-btn-dark: #333;
+$color-btn-hvr: #777;
+
+$color-menu: rgb(40, 40, 40);
+$color-menu-hover: $gray;
+$color-menu-selected: $silver;
+
+$highlight: #D95F43;
+$highlight-text: #FFFBDB;
+
+// for main logo; used to measure out header; 95px base img
+$logo-height: 8.461538461538462em*0.6;
+
+.white {color: black; background-color: rgba(255,255,255, 0.95);}
+.orange{background-color: rgba(255,195,40,0.7);}
+.green {color: white; background-color: rgba(109, 152, 71, 0.84)}
+.greenu {@include background-opacity($color-upower-green, 0.88); }
+.dark {color: $light-gray; background-color: rgba(70,70,70, 0.8);}
+.lighter {color: $dark-gray; background-color: rgba(255,255,255, 0.88);}
+.light {color: $dark-gray; background-color: rgba(250,250,250, 0.86);}
+.soft {color: $dark-gray; background-color: rgba(255,255,255, 0.56);}
+.cloud{background-color: rgba(100,100,100,0.06);}
+.glass{background-color: rgba(80,80,80,0.46);}
+.glassdark{background-color: rgba(20,20,20,0.59);}
+.txtsilver{color: $silver;}
+
+
+// *********************************************************
+// FONTS
+// *********************************************************
+
+// FONT STACKS
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+%raleway {font-family: 'Raleway', sans-serif;}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
+%open-sans {font-family: 'Open Sans', serif;}
+
+
+
+
+// *********************************************************
+// DESIGN CLASSES
+// *********************************************************
+
+// padding used for content/container sections, and between content sections
+%padding-content {
+   @include media($small-only){padding: $base $base*0.8 $base $base*0.8; }
+   @include media($medium){padding: $base*2 $base*1.3 $base $base*1.3; }
+   @include media($larger){padding: $base*2 $base*3 $base $base*3; }
+}
+
+// distance top of content section and content (lots of room for menu)
+// $padding-content-top: $base*7;
+%padding-top {
+   @include media($small) {padding-top: $base*3;}
+   @include media($medium) {padding-top: $base*7;}
+}
+
+// padding and margin within content sections
+%margin-content {margin: $base 0 $base 0;}
+%padding-heading {padding: $base*0.3 $base $base*0.3 $base/2; @extend %margin-content;}
+%padding-content-item {padding: $base*0.8 $base $base*0.8 $base; @extend %margin-content;}
+
+%shadow-internal-light {box-shadow: 0 0px 50px rgba(20, 20, 20, 0.07), 0 0 70px rgba(0, 0, 0, 0.08) inset;}
+%shadow-internal-dark {box-shadow: 0 0px 50px rgba(20, 20, 20, 0.22), 0 0 80px rgba(0, 0, 0, 0.42) inset;}
+%shadow-gray {box-shadow:1px 1px 4px rgba(180,180,180,0.4),inset 1px 0 1px rgba(255,255,255,0.6);}
